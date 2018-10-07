@@ -1,0 +1,16 @@
+extends layout
+
+block header
+	h1 Change out - #{name}
+
+block content
+	div.wrapper
+		- const upDog = dog.toUpperCase();
+		h1.hello Hello my dogs name is #{upDog};
+		span#yo Yo!!
+		img.heart(src="images/icons/heart.svg" style="max-width: 200px" alt=`I heart ${upDog}`)
+
+		h2 Hello #[em How are you]
+
+		h2 Sale ends #{h.moment().endOf("day").fromNow()}
+
